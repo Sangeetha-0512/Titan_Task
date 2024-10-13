@@ -1,0 +1,11 @@
+.navbtn{
+    margin-left: 100%;
+}
+.card
+{
+  display: inline-flex;
+  margin-left: 20px;
+}
+.red{
+  color: red;
+}
