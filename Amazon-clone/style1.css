@@ -1,0 +1,253 @@
+body{
+    background: white;
+}
+
+.breadcrum{
+    padding:10px 20px;
+    font-size:12px;
+    color: #565656;
+}
+.productdispaly{
+    min-height: 100%;
+    padding: 10px 20px;
+    display: flex;
+
+}
+.prodimg{
+    display: flex;
+    gap: 10px;
+
+}
+.proicons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.proicons img{
+    border: 1px solid gray;
+    border-radius:10px;
+    padding: 5px;
+}
+
+.proddetails{
+    margin: 0 30px;
+
+}
+.protitle{
+    font-size: 25px;
+}
+.brand-store{
+    margin-top: 5px;
+    color: #007185;
+    font-size: 14px;
+}
+.pro-rating{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.pro-rating div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pro-rating p{
+    color: #007185;
+}
+.pro-rating p span{
+    color: white;
+    background-color: #c73500;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.pro-rating h5{
+    font-weight: 400;
+}
+.proprice{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.proprice div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+
+}
+.proprice div p{
+    font-size: 26px;
+    color: #c73500;
+}
+.proprice div  h1{
+    font-size: 14px;
+    font-weight: 500;
+}
+.proprice  div h1 span{
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.proprice div h5{
+   color: #565656;
+    font-weight: 400;
+}
+.proprice h5 span{
+    text-decoration: line-through;
+}
+.proprice p span{
+    color: #007185;
+}
+.procolor{
+    margin: 15px 0;
+
+}
+.procoloroption{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+.option{
+    display:flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: 1px solid #cbcbcb;
+    gap: 10px;
+}
+
+.proinfo{
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+.prodes h1{
+    font-size: 20px;
+    margin: 15px 0;
+}
+.prodes ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 30px;
+}
+.prodpurchase{
+    width: 100%;
+    max-width: 280px;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+.prodpurchase .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.prodpurchase .proprice{
+    font-size: 16px;
+    font-weight:400;
+    margin: 10px 0;
+}
+.prodpurchase .proprice span{
+    font-size: 36px;
+    padding: 2px;
+}
+.prodpurchase .gap{
+    margin: 15px 0;
+
+}
+.prodpurchase p span{
+    color:#007185;
+}
+.location{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.stock{
+    margin: 50px 0;
+    color: green;
+    font-weight: 400;
+}
+.proquantity{
+    padding: 8px 5px;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #efefef;
+    border-color: #cfcfcf;
+}
+.btn{
+    outline: 0;
+    border: none;
+    background: #ffdf1f;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.prodpurchase .probuy{
+   background:#ffa41c;
+   cursor: pointer;
+}
+.proselinfo{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 4px;
+    font-size: 14px;
+    color: #565656;
+}
+.proselinfo span{
+    color: #007185;
+}
+.prodpurchase hr{
+    margin: 20px 0;
+}
+.addlist{
+    width: 100%;
+    padding:8px 15px;
+    border-radius:5px;
+    border: 1px solid #000;
+    text-align: start;
+    border-radius: 50px;
+    background: #ffdf1f;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+
+
+/* resposive  */
+
+@media only screen and (max-width:900px)
+{
+    .productdispaly{
+       flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width:900px){
+.proicons{
+    display: none;
+}
+.promainimg img
+{
+ width: 100%;
+ padding: 20px;
+}
+.procoloroption{
+    padding: 6px 8px;
+}
+.procoloroption p{
+    display: none;
+}
+.prodpurchase{
+    max-width: 90%;
+    margin: 20px auto 10px;
+}
+}
