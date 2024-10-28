@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="Signin.css">
+</head>
+<body>
+    <a href="index.html"><img class="logo" src="assets/amazon_logo_dark.png" width="100px"></a>
+    <div class="sigincontainer">
+        <h1 class="title" id="signin">Sign In</h1>
+        <h5 class="input-field">Email or Mobile phone number</h5>
+        <form onsubmit="return handleSubmit(event)">
+        <input type="text" id="emailOrPhone" required> 
+        <button type="submit">Continue</button>
+    </form>
+        <p class="text">By Continuing, you agree to Amazon's<span>Conditions of Use </span> and <span>Privacy Notice.</span></p>  
+        <p class="help">&#9656 <span>Need Help?</span></p>
+        <hr>
+        <h4>Buying for work?</h4>
+        <P class="bus"><span>Shop on Amazon Business</span></P>
+    </div>
+    <div class="siginbotom">
+        <hr>
+        <p>New to Amazon?</p>
+        <hr>
+    </div>
+     <a href="Signup.html"> <button class="btns">Create a New Account</button></a>  
+   <footer>
+    <div class="footerlink">
+        <a href="">Conditions of use</a>
+        <a href="">Privacy Notice</a>
+        <a href="">Help</a>
+    </div>
+    <p class="copywrite">&copy;  1996-2024,Amazon.com, Inc. or its affiliates</p>
+   </footer>
+   <script>
+    function handleSubmit(event){
+        event.preventDefault();
+        var emailOrPhone=document.getElementById("emailOrPhone").value;
+        if(emailOrPhone=="")
+    {
+        alert("Please enter your email or mobile number");
+        return false;
+    }
+        alert("You are Successfully LogIn!!");
+        return true;
+    }
+   </script>
+    </body>
+</html>
